@@ -4,6 +4,13 @@
 
 <h3 align="center">Backend-SMS</h3>
 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/caioagiani/backend-sms">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/caioagiani/backend-sms">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/caioagiani/backend-sms">
+  <img alt="GitHub license" src="https://img.shields.io/badge/license-MIT-blue.svg">
+</p>
+
 <div align="center">
 
 Aplicação API para disparos de SMS e Encurtador de URL usando o Gateway - [Mobizon](https://github.com/mobizon/mobizon-php/tree/master/docs/examples)
@@ -75,7 +82,7 @@ post('/shorts/list')
 }
 ```
 
-Importe as rotas no seu [Insomnia](https://insomnia.rest/run/?label=backend-sms&uri=https%3A%2F%2Fgithub.com%2Fcaioagiani%2Fbackend-sms%2Finsomnia.json).
+Importe as rotas no seu [Insomnia](https://insomnia.rest/run/?label=backend-sms&uri=https://raw.githubusercontent.com/caioagiani/backend-sms/master/insomnia.json).
 
 ## Colaboradores
 
