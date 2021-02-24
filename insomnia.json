@@ -1,0 +1,197 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-24T00:55:52.336Z",
+  "__export_source": "insomnia.desktop.app:v2020.3.3",
+  "resources": [
+    {
+      "_id": "req_61770434c51a48b7a68325d4fd32bd4c",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"recipient\": \"5511941439844\",\n\t\"text\": \"Hello!\"\n}"
+      },
+      "created": 1614104517765,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_d61a590731784d5b91c51315ba51ed57",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1614104517765,
+      "method": "POST",
+      "modified": 1614128049421,
+      "name": "Store",
+      "parameters": [],
+      "parentId": "fld_d130ea37a6944e05be62e99d73cc3fd5",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ dev }}/sms/create",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_d130ea37a6944e05be62e99d73cc3fd5",
+      "created": 1614104515773,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614104515773,
+      "modified": 1614104515773,
+      "name": "Sms",
+      "parentId": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "created": 1614104131464,
+      "description": "",
+      "modified": 1614104131464,
+      "name": "backend-sms",
+      "parentId": null,
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_1881cd51d9fd4ba299ca15598a23b114",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"data\": {\n\t\t\"fullLink\": \"https://mobizon.com.br\"\n\t}\n}"
+      },
+      "created": 1614104218075,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_0955810a7ca84e4690769dddae4dc0dd",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1614104218075,
+      "method": "POST",
+      "modified": 1614124218507,
+      "name": "Store",
+      "parameters": [],
+      "parentId": "fld_4b4f9393a92a4083951a99eac02468c4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ dev }}/shorts/create",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4b4f9393a92a4083951a99eac02468c4",
+      "created": 1614104214966,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614104214966,
+      "modified": 1614104214966,
+      "name": "Short",
+      "parentId": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_77f215f12036413e8f01e47f537c3da9",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"criteria\": {\n\t\t\"status\": \"1\",\n\t\t\"moderatorStatus\": \"1\"\n\t},\n\t\"pagination\": {\n\t\t\"currentPage\": \"1\",\n\t\t\"pageSize\": \"5\"\n\t},\n\t\"sort\": {\n\t\t\"clickCnt\": \"DESC\"\n\t}\n}"
+      },
+      "created": 1614122263359,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_0955810a7ca84e4690769dddae4dc0dd",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1613336837317.5,
+      "method": "POST",
+      "modified": 1614124264941,
+      "name": "Index",
+      "parameters": [
+        {
+          "description": "",
+          "disabled": true,
+          "id": "pair_5cb6b7032271432f9cc6dcd86122387c",
+          "name": "",
+          "value": ""
+        }
+      ],
+      "parentId": "fld_4b4f9393a92a4083951a99eac02468c4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ dev }}/shorts/list",
+      "_type": "request"
+    },
+    {
+      "_id": "env_10cc9175199ccbc3d95949ef65c53651e62c2584",
+      "color": null,
+      "created": 1614104131671,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1614104131672,
+      "modified": 1614104131671,
+      "name": "Base Environment",
+      "parentId": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_10cc9175199ccbc3d95949ef65c53651e62c2584",
+      "cookies": [],
+      "created": 1614104131676,
+      "modified": 1614104131676,
+      "name": "Default Jar",
+      "parentId": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_0d1ec016f2c04e57aeac82225303752f",
+      "contentType": "yaml",
+      "contents": "",
+      "created": 1614104131495,
+      "fileName": "backend-sms",
+      "modified": 1614104131495,
+      "parentId": "wrk_425c2320028a437ca81472fc5b6cc587",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_7f1733d514e84623aeed0c7fed7b4d57",
+      "color": "#2611e4",
+      "created": 1614104140055,
+      "data": {
+        "dev": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "dev"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1614104140055,
+      "modified": 1614104202417,
+      "name": "CONST",
+      "parentId": "env_10cc9175199ccbc3d95949ef65c53651e62c2584",
+      "_type": "environment"
+    }
+  ]
+}
