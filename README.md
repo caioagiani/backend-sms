@@ -75,7 +75,7 @@ post('/shorts/list')
 }
 ```
 
-Importe as rotas no seu [Insomnia](https://insomnia.rest/run/?label=backend-sms&uri=https%3A%2F%2Fgithub.com%2Fcaioagiani%2Fbackend-sms%2Finsomnia.json).
+Importe as rotas no seu [Insomnia](https://insomnia.rest/run/?label=backend-sms&uri=https://raw.githubusercontent.com/caioagiani/backend-sms/master/insomnia.json).
 
 ## Colaboradores
 
