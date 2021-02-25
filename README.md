@@ -84,6 +84,24 @@ post('/shorts/list')
 
 Importe as rotas no seu [Insomnia](https://insomnia.rest/run/?label=backend-sms&uri=https://raw.githubusercontent.com/caioagiani/backend-sms/master/insomnia.json).
 
+## Testes
+
+```javascript
+$ jest --setupFiles dotenv/config --detectOpenHandles --forceExit
+ PASS  __tests__/short.test.js
+  API Requests
+    ✓ should send an sms (865 ms)
+    ✓ should create a shortened link (477 ms)
+    ✓ should list all shortened links (317 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        2.871 s, estimated 3 s
+Ran all test suites.
+Done in 3.29s.
+```
+
 ## Colaboradores
 
 - [@juan-patrick](https://github.com/juan-patrick) - Frontend
