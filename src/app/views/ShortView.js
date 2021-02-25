@@ -1,4 +1,4 @@
-export const render = ({
+const render = ({
   id,
   shortLink,
   fullLink,
@@ -18,6 +18,6 @@ export const render = ({
   comment,
 });
 
-export const renderMany = (shorts) => {
-  shorts.data.items.map((short) => render(short));
-};
+const renderMany = (shorts) => shorts.map((short) => render(short));
+
+export { render, renderMany };
