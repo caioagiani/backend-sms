@@ -9,6 +9,6 @@ export default {
       return res.status(401).json(sendSms);
     }
 
-    return res.json(render(sendSms.data));
+    return res.status(201).json(render(sendSms.data));
   },
 };

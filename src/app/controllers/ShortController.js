@@ -5,7 +5,9 @@ export default {
   index: async (req, res) => {
     const listShort = await mobizon.listShort(req.body);
 
-    return res.json({ items: renderMany(listShort).reverse() });
+    const { items } = listShort.data;
+
+    return res.json({ items: renderMany(items).reverse() });
   },
   store: async (req, res) => {
     const createShort = await mobizon.createShort(req.body);
@@ -14,9 +16,9 @@ export default {
       return res.status(401).json(createShort);
     }
 
-    return res.json({
-      ...render(createShort.data),
-      fullLink: req.body.data.fullLink,
-    });
+    const { data } = createShort;
+    const { fullLink } = data;
+
+    return res.status(201).json({ ...render(data), fullLink });
   },
 };
