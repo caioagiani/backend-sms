@@ -1,14 +1,9 @@
-import cors from 'cors';
-import express from 'express';
+import app from './app';
+import './services/mongoose';
 
-import routers from './routers';
-
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-app.use(routers);
-
-app.listen(3333 || process.env.PORT, () =>
-  console.log('Server listening on http://localhost:3333')
-);
+app.listen(3333 || process.env.PORT, () => {
+  console.log({
+    server: 'http://localhost:3333',
+    database: 'mongodb',
+  });
+});
