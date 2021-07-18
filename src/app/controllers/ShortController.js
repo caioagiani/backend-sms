@@ -16,9 +16,10 @@ export default {
       return res.status(401).json(createShort);
     }
 
-    const { data } = createShort;
-    const { fullLink } = data;
+    const {
+      data: { shortLink },
+    } = createShort;
 
-    return res.status(201).json({ ...render(data), fullLink });
+    return res.status(201).json({ ...render(createShort.data), shortLink });
   },
 };

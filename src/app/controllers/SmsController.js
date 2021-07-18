@@ -25,8 +25,6 @@ export default {
       ids: [id],
     });
 
-    console.log(id);
-
     return res.json(getSms);
   },
   store: async (req, res) => {
