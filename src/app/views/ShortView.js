@@ -1,7 +1,6 @@
 const render = ({
   id,
   shortLink,
-  fullLink,
   status,
   clickCnt,
   createTs,
@@ -10,7 +9,6 @@ const render = ({
 }) => ({
   id,
   shortLink,
-  fullLink,
   status,
   clickCnt,
   createTs,
