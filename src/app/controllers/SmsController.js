@@ -2,7 +2,7 @@ import mobizon from '../../services/mobizon';
 import { render } from '../views/SmsView';
 
 export default {
-  index: async (req, res) => {
+  index: async (_req, res) => {
     const listSms = await mobizon.listSms({
       criteria: {
         from: '',
