@@ -40,7 +40,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "dotenv": "15.0.1",
+    "dotenv": "16.0.0",
     "eslint": "8.8.0",
     "@sucrase/jest-plugin": "2.1.1",
     "eslint-config-airbnb-base": "14.2.1",
