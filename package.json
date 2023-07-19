@@ -50,6 +50,6 @@
     "eslint-plugin-prettier": "4.0.0",
     "nodemon": "2.0.13",
     "prettier": "2.6.2",
-    "sucrase": "3.21.0"
+    "sucrase": "3.34.0"
   }
 }
