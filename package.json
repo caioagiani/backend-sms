@@ -48,7 +48,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-import-helpers": "1.2.0",
     "eslint-plugin-prettier": "4.0.0",
-    "nodemon": "2.0.13",
+    "nodemon": "2.0.22",
     "prettier": "2.6.2",
     "sucrase": "3.21.0"
   }
